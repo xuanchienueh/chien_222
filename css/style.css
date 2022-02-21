@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", sans-serif;
+  color: #eee; }
+
+button:focus {
+  outline: none; }
+
+@media only screen and (max-width: 767px) {
+  #header-diner .form-inline {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+  #header-diner .search_menu #menu_Modal .modal-content .modal-header {
+    margin-top: 40px; }
+    #header-diner .search_menu #menu_Modal .modal-content .modal-header .close {
+      height: 40px;
+      width: 40px; }
+
+  #banner {
+    height: 450px;
+    background-position: left; }
+    #banner .banner_content {
+      top: 150px;
+      left: 20px; }
+
+  #about_us .about_us {
+    padding: 50px 0; }
+    #about_us .about_us .about_title h3 {
+      font-size: 1.5rem; }
+    #about_us .about_us .about_title p {
+      font-size: 1.3rem; }
+    #about_us .about_us .about_content p,
+    #about_us .about_us .about_content span {
+      font-size: 1rem; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #banner {
+    height: 600px;
+    background-position: left; }
+    #banner .banner_content {
+      top: 220px;
+      left: 100px; }
+      #banner .banner_content h3 {
+        font-size: 2.5rem; }
+      #banner .banner_content button {
+        padding: 0.7rem 2.5rem;
+        border: 2px solid #ffffff; }
+
+  #about_us .about_us {
+    padding: 100px 0; } }
+@media only screen and (min-width: 992px) {
+  #header-diner .search_menu #menu_Modal .modal-content .modal-header .close {
+    height: 50px;
+    width: 50px; }
+
+  #banner {
+    height: 100vh;
+    background-position: center; }
+    #banner .banner_content {
+      top: 220px;
+      left: 100px; }
+      #banner .banner_content h3 {
+        font-size: 3.5rem; }
+      #banner .banner_content button {
+        padding: 1rem 3rem;
+        border: 3px solid #ffffff; }
+        #banner .banner_content button:hover span, #banner .banner_content button:hover i {
+          color: #ff6600; }
+        #banner .banner_content button span,
+        #banner .banner_content button i {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #ffffff; }
+
+  #about_us .about_us {
+    padding: 100px 0; }
+    #about_us .about_us .about_title h3 {
+      font-size: 3rem; }
+    #about_us .about_us .about_title p {
+      font-size: 1.5rem; }
+    #about_us .about_us .about_content p,
+    #about_us .about_us .about_content span {
+      font-size: 1.5rem; } }
+#header-diner {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 100%; }
+  #header-diner .navbar {
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto; }
+    #header-diner .navbar .navbar-brand {
+      font-size: 3rem;
+      color: #ffffff;
+      font-weight: bold; }
+  #header-diner .search_menu {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 1rem; }
+    #header-diner .search_menu .change_theme,
+    #header-diner .search_menu .menu {
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border: none; }
+      #header-diner .search_menu .change_theme i,
+      #header-diner .search_menu .menu i {
+        font-size: 2rem;
+        color: white; }
+    #header-diner .search_menu .change_theme .fa-moon {
+      display: none; }
+    #header-diner .search_menu .form-inline {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #232220;
+      height: 3.4rem;
+      border-radius: 6px; }
+      #header-diner .search_menu .form-inline button,
+      #header-diner .search_menu .form-inline input {
+        color: #c2d0da;
+        border: none; }
+      #header-diner .search_menu .form-inline input {
+        margin-right: 0 !important;
+        background-color: transparent;
+        border: 0px solid;
+        padding: 10px 10px 10px 20px;
+        font-size: 1.3rem; }
+        #header-diner .search_menu .form-inline input:focus {
+          box-shadow: none; }
+    #header-diner .search_menu .modal {
+      background-color: rgba(0, 0, 0, 0.5); }
+      #header-diner .search_menu .modal .modal-dialog {
+        max-width: 100%; }
+    #header-diner .search_menu #menu_Modal .modal-content {
+      background-color: transparent;
+      border: none; }
+      #header-diner .search_menu #menu_Modal .modal-content .modal-header {
+        border-bottom: none;
+        margin-right: 40px; }
+        #header-diner .search_menu #menu_Modal .modal-content .modal-header .close {
+          background-color: #ff6600;
+          color: #ffffff;
+          opacity: 1;
+          border-radius: 6px;
+          position: relative; }
+          #header-diner .search_menu #menu_Modal .modal-content .modal-header .close i {
+            text-align: center;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            font-size: 1.5rem; }
+      #header-diner .search_menu #menu_Modal .modal-content .modal-body {
+        text-align: center;
+        line-height: 3rem; }
+        #header-diner .search_menu #menu_Modal .modal-content .modal-body li {
+          width: 200px;
+          margin: 8px auto; }
+          #header-diner .search_menu #menu_Modal .modal-content .modal-body li:hover a {
+            color: #ff6600; }
+          #header-diner .search_menu #menu_Modal .modal-content .modal-body li a {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            width: 100%;
+            display: block; }
+
+#root.light #header-diner .form-inline {
+  background-color: white; }
+  #root.light #header-diner .form-inline button {
+    color: #232220; }
+#root.light #about_us {
+  background-color: #ffffff; }
+  #root.light #about_us .about_title h3 {
+    color: #232220; }
+  #root.light #about_us .about_content p,
+  #root.light #about_us .about_content span {
+    color: #232220; }
+
+#banner {
+  width: 100%;
+  background-image: linear-gradient(to right, #ff6600, rgba(5, 3, 0, 0.2)), url("../img/banner1.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+  #banner .banner_content {
+    position: absolute;
+    max-width: 600px; }
+    #banner .banner_content h3 {
+      font-weight: bold; }
+    #banner .banner_content p {
+      color: #ffffff;
+      font-size: 1.3rem;
+      line-height: 1.8;
+      margin-top: 2rem; }
+    #banner .banner_content button:hover span, #banner .banner_content button:hover i {
+      color: #ff6600; }
+    #banner .banner_content button span,
+    #banner .banner_content button i {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffffff; }
+
+#about_us {
+  background-color: #282828;
+  width: 100%; }
+  #about_us .about_us {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    #about_us .about_us .about_title h3 {
+      color: #ffffff;
+      font-weight: bold; }
+    #about_us .about_us .about_title p {
+      color: #ff6600;
+      font-family: "Pacifico", cursive; }
+    #about_us .about_us .about_content p,
+    #about_us .about_us .about_content span {
+      color: #c2d0da; }
+
+/*# sourceMappingURL=style.css.map */
