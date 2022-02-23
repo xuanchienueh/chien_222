@@ -252,6 +252,56 @@ p.chukieu {
         width: 100%;
         transition: all 0.5s; }
 
+#list_food {
+  background-color: #232220;
+  color: #c2d0da;
+  padding: 5% 0; }
+  #list_food .row {
+    margin: 0 auto; }
+    #list_food .row div .boder {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      margin: 15px 0rem;
+      padding: 40px; }
+      #list_food .row div .boder:hover .title .icon {
+        background-color: #ff6600; }
+        #list_food .row div .boder:hover .title .icon i {
+          color: #ffffff; }
+      #list_food .row div .boder .title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem; }
+        #list_food .row div .boder .title .icon {
+          width: 72px;
+          height: 72px;
+          background-color: #282828;
+          border-radius: 6px;
+          transition: all 0.5s; }
+          #list_food .row div .boder .title .icon i {
+            color: #ff6600;
+            font-size: 1.5rem;
+            margin: 50% 0 0 50%;
+            transform: translate(-50%, -50%); }
+        #list_food .row div .boder .title .name {
+          margin-left: 2rem;
+          height: 72px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-evenly; }
+          #list_food .row div .boder .title .name p {
+            font-size: 1.2rem; }
+          #list_food .row div .boder .title .name h6 {
+            font-size: 1.6rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.5s;
+            min-width: 150px; }
+            #list_food .row div .boder .title .name h6:hover {
+              color: #ff6600; }
+      #list_food .row div .boder p {
+        font-size: 1.2rem;
+        margin-bottom: 0; }
+
 @media only screen and (max-width: 767px) {
   #header-diner .form-inline {
     position: absolute;
