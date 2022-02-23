@@ -25,81 +25,10 @@ h6 {
 button:focus {
   outline: none; }
 
-@media only screen and (max-width: 767px) {
-  #header-diner .form-inline {
-    position: absolute;
-    top: -9999px;
-    left: -9999px; }
-  #header-diner .search_menu #menu_Modal .modal-content .modal-header {
-    margin-top: 40px; }
-    #header-diner .search_menu #menu_Modal .modal-content .modal-header .close {
-      height: 40px;
-      width: 40px; }
+p.chukieu {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem; }
 
-  #banner {
-    height: 450px;
-    background-position: left; }
-    #banner .banner_content {
-      top: 115px;
-      left: 20px; }
-
-  #about_us .about_us {
-    padding: 50px 0; }
-    #about_us .about_us .about_title h3 {
-      font-size: 1.5rem; }
-    #about_us .about_us .about_title p {
-      font-size: 1.3rem; }
-    #about_us .about_us .about_content p,
-    #about_us .about_us .about_content span {
-      font-size: 1rem; } }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  #banner {
-    height: 600px;
-    background-position: left; }
-    #banner .banner_content {
-      top: 220px;
-      left: 100px; }
-      #banner .banner_content h3 {
-        font-size: 2.5rem; }
-      #banner .banner_content button {
-        padding: 0.7rem 2.5rem;
-        border: 2px solid #ffffff; }
-
-  #about_us .about_us {
-    padding: 100px 0; } }
-@media only screen and (min-width: 992px) {
-  #header-diner .search_menu #menu_Modal .modal-content .modal-header .close {
-    height: 50px;
-    width: 50px; }
-
-  #banner {
-    height: 100vh;
-    background-position: center; }
-    #banner .banner_content {
-      top: 220px;
-      left: 100px; }
-      #banner .banner_content h3 {
-        font-size: 3.5rem; }
-      #banner .banner_content button {
-        padding: 1rem 3rem;
-        border: 3px solid #ffffff; }
-        #banner .banner_content button:hover span, #banner .banner_content button:hover i {
-          color: #ff6600; }
-        #banner .banner_content button span,
-        #banner .banner_content button i {
-          font-size: 1.5rem;
-          font-weight: bold;
-          color: #ffffff; }
-
-  #about_us .about_us {
-    padding: 100px 0; }
-    #about_us .about_us .about_title h3 {
-      font-size: 3rem; }
-    #about_us .about_us .about_title p {
-      font-size: 1.5rem; }
-    #about_us .about_us .about_content p,
-    #about_us .about_us .about_content span {
-      font-size: 1.5rem; } }
 #header-diner {
   position: absolute;
   top: 16px;
@@ -237,5 +166,156 @@ button:focus {
     #about_us .about_us .about_content p,
     #about_us .about_us .about_content span {
       color: #c2d0da; }
+
+#restaurant {
+  background-color: #ff6600; }
+  #restaurant .restaurant_img img {
+    width: 100%; }
+  #restaurant .restaurant_content {
+    padding: 4%; }
+    #restaurant .restaurant_content .introduction {
+      width: 90%; }
+      #restaurant .restaurant_content .introduction .chukieu {
+        color: #ffffff;
+        margin-bottom: 0; }
+      #restaurant .restaurant_content .introduction h3 {
+        font-size: 3rem;
+        font-weight: bold; }
+      #restaurant .restaurant_content .introduction span {
+        color: #ffdfc9;
+        font-size: 1.3rem;
+        display: block;
+        margin: 1.6rem 0 3.5rem; }
+    #restaurant .restaurant_content .deal_food .deal_food_item:hover .icon i {
+      color: #e1ae00; }
+    #restaurant .restaurant_content .deal_food .deal_food_item .icon {
+      width: 72px;
+      height: 72px;
+      background-color: white;
+      border-radius: 6px; }
+      #restaurant .restaurant_content .deal_food .deal_food_item .icon i {
+        color: #ff6600;
+        font-size: 2rem;
+        margin: 50% 0 0 50%;
+        transform: translate(-50%, -50%); }
+    #restaurant .restaurant_content .deal_food .deal_food_item h3 {
+      font-weight: bold;
+      margin: 2rem 0 1rem 0;
+      cursor: pointer; }
+    #restaurant .restaurant_content .deal_food .deal_food_item p {
+      color: #ffdfc9;
+      font-size: 1.3rem;
+      width: 90%; }
+
+@media only screen and (max-width: 767px) {
+  #header-diner .form-inline {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+  #header-diner .search_menu #menu_Modal .modal-content .modal-header {
+    margin-top: 40px; }
+    #header-diner .search_menu #menu_Modal .modal-content .modal-header .close {
+      height: 40px;
+      width: 40px; }
+
+  #banner {
+    height: 450px;
+    background-position: left; }
+    #banner .banner_content {
+      top: 115px;
+      left: 20px; }
+
+  #about_us .about_us {
+    padding: 50px 0; }
+    #about_us .about_us .about_title h3 {
+      font-size: 1.5rem; }
+    #about_us .about_us .about_title p {
+      font-size: 1.3rem; }
+    #about_us .about_us .about_content p,
+    #about_us .about_us .about_content span {
+      font-size: 1rem; }
+
+  #restaurant .restaurant_img {
+    height: 70%;
+    overflow: hidden; }
+    #restaurant .restaurant_img img {
+      width: 94%;
+      margin: 6% 3%; }
+  #restaurant .restaurant_content {
+    margin-left: 5%; }
+    #restaurant .restaurant_content .introduction .chukieu {
+      font-size: 1rem; }
+    #restaurant .restaurant_content .introduction h3 {
+      font-size: 1.5rem; }
+    #restaurant .restaurant_content .introduction span {
+      font-size: 1rem; }
+    #restaurant .restaurant_content .deal_food .deal_food_item h3 {
+      font-size: 1.2rem; }
+    #restaurant .restaurant_content .deal_food .deal_food_item p {
+      font-size: 1rem; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #banner {
+    height: 600px;
+    background-position: left; }
+    #banner .banner_content {
+      top: 220px;
+      left: 100px; }
+      #banner .banner_content h3 {
+        font-size: 2.5rem; }
+      #banner .banner_content button {
+        padding: 0.7rem 2.5rem;
+        border: 2px solid #ffffff; }
+
+  #about_us .about_us {
+    padding: 100px 0; }
+
+  #restaurant .restaurant_img {
+    height: 70%;
+    overflow: hidden; }
+    #restaurant .restaurant_img img {
+      width: 94%;
+      margin: 6% 3%; }
+  #restaurant .restaurant_content {
+    margin-left: 2%; } }
+@media only screen and (min-width: 992px) {
+  #header-diner .search_menu #menu_Modal .modal-content .modal-header .close {
+    height: 50px;
+    width: 50px; }
+
+  #banner {
+    height: 100vh;
+    background-position: center; }
+    #banner .banner_content {
+      top: 220px;
+      left: 100px; }
+      #banner .banner_content h3 {
+        font-size: 3.5rem; }
+      #banner .banner_content button {
+        padding: 1rem 3rem;
+        border: 3px solid #ffffff; }
+        #banner .banner_content button:hover span, #banner .banner_content button:hover i {
+          color: #ff6600; }
+        #banner .banner_content button span,
+        #banner .banner_content button i {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #ffffff; }
+
+  #about_us .about_us {
+    padding: 100px 0; }
+    #about_us .about_us .about_title h3 {
+      font-size: 3rem; }
+    #about_us .about_us .about_title p {
+      font-size: 1.5rem; }
+    #about_us .about_us .about_content p,
+    #about_us .about_us .about_content span {
+      font-size: 1.5rem; }
+
+  #restaurant .restaurant_img {
+    background-image: url("../img/banner3.jpg");
+    background-position: center;
+    background-size: cover; }
+    #restaurant .restaurant_img img {
+      display: none; } }
 
 /*# sourceMappingURL=style.css.map */
