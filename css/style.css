@@ -376,7 +376,11 @@ p.chukieu {
         padding: 28px 20px 8px;
         background-color: #232220;
         border-radius: 6px;
-        box-shadow: 0 0 4px rgba(0, 0, 0, 0.15); }
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+        transition: all 0.5s; }
+        #deliciousness .background .count_number .count_item .wrap:hover {
+          transform: translateY(-0.25rem);
+          box-shadow: #2e2933 0px 2px 4px, #473f4f 0px 5px 0px; }
         #deliciousness .background .count_number .count_item .wrap .icon {
           width: 72px;
           height: 72px;
