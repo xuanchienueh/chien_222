@@ -320,7 +320,7 @@ p.chukieu {
 
 #deliciousness {
   background-color: #232220;
-  height: 1000px; }
+  height: 2000px; }
   #deliciousness .background {
     background-image: url("../img/banner2.jpg");
     background-position: center;
@@ -371,7 +371,8 @@ p.chukieu {
       left: 10%;
       right: 10%;
       color: #ffffff;
-      z-index: 1; }
+      z-index: 1;
+      margin: 0 auto; }
       #deliciousness .background .count_number .count_item .wrap {
         padding: 28px 20px 8px;
         background-color: #232220;
@@ -402,6 +403,42 @@ p.chukieu {
           font-weight: bold;
           margin-top: 1rem;
           text-align: center; }
+  #deliciousness .background_video {
+    width: 100%;
+    margin-top: 12%; }
+    #deliciousness .background_video .video {
+      margin: 0 auto;
+      width: 100%;
+      border-radius: 6px;
+      background-image: url("../img/banner3.jpg");
+      background-position: center;
+      background-size: cover;
+      position: relative; }
+      #deliciousness .background_video .video::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0%;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); }
+      #deliciousness .background_video .video a {
+        position: absolute;
+        z-index: 1;
+        left: 30%;
+        top: 30%; }
+    #deliciousness .background_video #video_Modal {
+      background-color: rgba(0, 0, 0, 0.8); }
+      #deliciousness .background_video #video_Modal .modal-dialog .modal-content {
+        background-color: transparent;
+        margin: 0 auto; }
+        #deliciousness .background_video #video_Modal .modal-dialog .modal-content .modal-header {
+          border: none; }
+          #deliciousness .background_video #video_Modal .modal-dialog .modal-content .modal-header button {
+            position: absolute;
+            top: 10px;
+            right: 11px;
+            color: #ffffff; }
 
 @media only screen and (max-width: 767px) {
   #header-diner .form-inline {
@@ -528,6 +565,19 @@ p.chukieu {
       display: none; }
 
   #deliciousness .background {
-    height: 490px; } }
+    height: 490px; }
+  #deliciousness .background_video iframe,
+  #deliciousness .background_video video {
+    width: 750px;
+    height: 425px; }
+  #deliciousness .background_video .video {
+    height: 500px; }
+  #deliciousness .background_video #video_Modal .modal-dialog {
+    max-width: 100%;
+    margin-top: 12%; }
+    #deliciousness .background_video #video_Modal .modal-dialog .modal-content {
+      width: 43%; }
+      #deliciousness .background_video #video_Modal .modal-dialog .modal-content .modal-header {
+        border: none; } }
 
 /*# sourceMappingURL=style.css.map */
