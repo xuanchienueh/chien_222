@@ -318,6 +318,87 @@ p.chukieu {
         font-size: 1.2rem;
         margin-bottom: 0; }
 
+#deliciousness {
+  background-color: #232220;
+  height: 1000px; }
+  #deliciousness .background {
+    background-image: url("../img/banner2.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative; }
+    #deliciousness .background::after {
+      content: "";
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0; }
+    #deliciousness .background .deliciousness_content {
+      position: absolute;
+      z-index: 1;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center; }
+      #deliciousness .background .deliciousness_content h3 {
+        font-size: 3rem;
+        color: #ffffff;
+        font-weight: bold;
+        width: 90%; }
+      #deliciousness .background .deliciousness_content .deliciousness_button {
+        margin-top: 5%; }
+        #deliciousness .background .deliciousness_content .deliciousness_button button {
+          padding: 0.6rem 1.3rem;
+          margin: 0 1rem; }
+          #deliciousness .background .deliciousness_content .deliciousness_button button span,
+          #deliciousness .background .deliciousness_content .deliciousness_button button i {
+            font-size: 1.2rem;
+            font-weight: 900;
+            margin: 0 0.5rem; }
+        #deliciousness .background .deliciousness_content .deliciousness_button .btn_contact_us {
+          background-color: #ff6600;
+          color: #ffffff; }
+          #deliciousness .background .deliciousness_content .deliciousness_button .btn_contact_us:hover {
+            filter: brightness(80%); }
+        #deliciousness .background .deliciousness_content .deliciousness_button .btn_read_more {
+          border: 2px solid white; }
+          #deliciousness .background .deliciousness_content .deliciousness_button .btn_read_more:hover {
+            color: #ff6600; }
+    #deliciousness .background .count_number {
+      position: absolute;
+      top: 82%;
+      left: 10%;
+      right: 10%;
+      color: #ffffff;
+      z-index: 1; }
+      #deliciousness .background .count_number .count_item .wrap {
+        padding: 28px 20px 8px;
+        background-color: #232220;
+        border-radius: 6px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.15); }
+        #deliciousness .background .count_number .count_item .wrap .icon {
+          width: 72px;
+          height: 72px;
+          border-radius: 50%;
+          background-color: #ff6600;
+          margin-left: 50%;
+          transform: translateX(-50%); }
+          #deliciousness .background .count_number .count_item .wrap .icon i {
+            font-size: 1.5rem;
+            margin: 50% 0 0 50%;
+            transform: translate(-50%, -50%); }
+        #deliciousness .background .count_number .count_item .wrap p {
+          text-align: center;
+          margin-top: 1rem;
+          font-size: 1.5rem; }
+        #deliciousness .background .count_number .count_item .wrap span {
+          display: block;
+          font-size: 2.5rem;
+          font-weight: bold;
+          margin-top: 1rem;
+          text-align: center; }
+
 @media only screen and (max-width: 767px) {
   #header-diner .form-inline {
     position: absolute;
@@ -440,6 +521,9 @@ p.chukieu {
     background-position: center;
     background-size: cover; }
     #restaurant .restaurant_img img {
-      display: none; } }
+      display: none; }
+
+  #deliciousness .background {
+    height: 490px; } }
 
 /*# sourceMappingURL=style.css.map */
