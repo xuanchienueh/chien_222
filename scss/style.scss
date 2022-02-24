@@ -478,10 +478,18 @@ $res_PC: "only screen and (min-width: 992px)";
         }
     }
 }
-
+@keyframes animation_play {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.25), 0 0 0 10px rgba(255, 255, 255, 0.25),
+            0 0 0 20px rgba(255, 255, 255, 0.25);
+    }
+    100% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.25), 0 0 0 20px rgba(255, 255, 255, 0.25),
+            0 0 0 40px rgba(50, 100, 245, 0);
+    }
+}
 #deliciousness {
     background-color: $bg-dark1;
-    height: 2000px;
     .background {
         background-image: url("../img/banner2.jpg");
         background-position: center;
@@ -553,8 +561,6 @@ $res_PC: "only screen and (min-width: 992px)";
                     transition: all 0.5s;
                     &:hover {
                         transform: translateY(-0.25rem);
-                        // box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
-                        // box-shadow: 0 8px 6px -6px white;
                         box-shadow: rgba(46, 41, 51, 8%) 0px 2px 4px, rgba(71, 63, 79, 16%) 0px 5px 0px;
                     }
                     .icon {
@@ -609,8 +615,35 @@ $res_PC: "only screen and (min-width: 992px)";
             a {
                 position: absolute;
                 z-index: 1;
-                left: 30%;
-                top: 30%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background-color: $text-white1;
+                width: 72px;
+                height: 72px;
+                border-radius: 50%;
+                text-align: center;
+                transition: all 0.5s;
+                &:hover {
+                    width: 90px;
+                    height: 90px;
+                    background-color: $primary-color;
+                    i {
+                        color: white;
+                        font-size: 2rem;
+                    }
+                }
+                animation-name: animation_play;
+                animation-duration: 2s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                i {
+                    margin-top: 50%;
+                    transform: translateY(-50%);
+                    color: $primary-color;
+                    transition: all 0.5s;
+                    font-size: 1.5rem;
+                }
             }
         }
         #video_Modal {
@@ -764,6 +797,28 @@ $res_PC: "only screen and (min-width: 992px)";
         }
         .restaurant_content {
             margin-left: 2%;
+        }
+    }
+    #deliciousness {
+        height: 1700px;
+        .background {
+            .deliciousness_content {
+                top: 30%;
+                left: 50%;
+            }
+            .count_number {
+                position: absolute;
+                top: 82%;
+                left: 0%;
+                right: 0%;
+                color: $text-white1;
+                margin: 0 auto;
+                .count_item {
+                    .wrap {
+                        padding: 0 0;
+                    }
+                }
+            }
         }
     }
 }

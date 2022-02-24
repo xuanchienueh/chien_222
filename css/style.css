@@ -318,9 +318,13 @@ p.chukieu {
         font-size: 1.2rem;
         margin-bottom: 0; }
 
+@keyframes animation_play {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.25), 0 0 0 10px rgba(255, 255, 255, 0.25), 0 0 0 20px rgba(255, 255, 255, 0.25); }
+  100% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.25), 0 0 0 20px rgba(255, 255, 255, 0.25), 0 0 0 40px rgba(50, 100, 245, 0); } }
 #deliciousness {
-  background-color: #232220;
-  height: 2000px; }
+  background-color: #232220; }
   #deliciousness .background {
     background-image: url("../img/banner2.jpg");
     background-position: center;
@@ -425,8 +429,32 @@ p.chukieu {
       #deliciousness .background_video .video a {
         position: absolute;
         z-index: 1;
-        left: 30%;
-        top: 30%; }
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        text-align: center;
+        transition: all 0.5s;
+        animation-name: animation_play;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite; }
+        #deliciousness .background_video .video a:hover {
+          width: 90px;
+          height: 90px;
+          background-color: #ff6600; }
+          #deliciousness .background_video .video a:hover i {
+            color: white;
+            font-size: 2rem; }
+        #deliciousness .background_video .video a i {
+          margin-top: 50%;
+          transform: translateY(-50%);
+          color: #ff6600;
+          transition: all 0.5s;
+          font-size: 1.5rem; }
     #deliciousness .background_video #video_Modal {
       background-color: rgba(0, 0, 0, 0.8); }
       #deliciousness .background_video #video_Modal .modal-dialog .modal-content {
@@ -517,7 +545,22 @@ p.chukieu {
       width: 94%;
       margin: 6% 3%; }
   #restaurant .restaurant_content {
-    margin-left: 2%; } }
+    margin-left: 2%; }
+
+  #deliciousness {
+    height: 1700px; }
+    #deliciousness .background .deliciousness_content {
+      top: 30%;
+      left: 50%; }
+    #deliciousness .background .count_number {
+      position: absolute;
+      top: 82%;
+      left: 0%;
+      right: 0%;
+      color: #ffffff;
+      margin: 0 auto; }
+      #deliciousness .background .count_number .count_item .wrap {
+        padding: 0 0; } }
 @media only screen and (min-width: 992px) {
   .row {
     max-width: 1200px; }
