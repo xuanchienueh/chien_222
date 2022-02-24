@@ -18,3 +18,8 @@ fa_moon.onclick = function () {
     fa_sun.style.display = 'block'
     fa_moon.style.display = 'none'
 }
+
+$('.counter').countUp({
+    'time': 4000,
+    'delay': 10
+});
