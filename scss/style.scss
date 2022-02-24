@@ -38,6 +38,7 @@ $second-color: #e1ae00;
 
 $text-white1: #ffffff;
 $text-white2: #c2d0da;
+$heading-color: #232121;
 
 $fw-1: bold;
 
@@ -204,6 +205,32 @@ $res_PC: "only screen and (min-width: 992px)";
         .category_title {
             h3 {
                 color: $bg-dark3;
+            }
+        }
+    }
+    #list_food {
+        background-color: white;
+        color: $bg-dark3;
+        .boder {
+            border: 1px solid #eee;
+            &:hover .title .icon {
+                background-color: $primary-color;
+                i {
+                    color: $text-white1;
+                }
+            }
+            .title {
+                .icon {
+                    background-color: rgba(130, 115, 252, 0.05);
+                }
+                .name {
+                    h6 {
+                        color: $heading-color;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
             }
         }
     }

@@ -130,6 +130,21 @@ p.chukieu {
   background-color: #f7f7f7; }
   #root.light #category .category_title h3 {
     color: #282828; }
+#root.light #list_food {
+  background-color: white;
+  color: #282828; }
+  #root.light #list_food .boder {
+    border: 1px solid #eee; }
+    #root.light #list_food .boder:hover .title .icon {
+      background-color: #ff6600; }
+      #root.light #list_food .boder:hover .title .icon i {
+        color: #ffffff; }
+    #root.light #list_food .boder .title .icon {
+      background-color: rgba(130, 115, 252, 0.05); }
+    #root.light #list_food .boder .title .name h6 {
+      color: #232121; }
+      #root.light #list_food .boder .title .name h6:hover {
+        color: #ff6600; }
 
 #banner {
   width: 100%;
