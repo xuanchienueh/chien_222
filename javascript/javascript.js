@@ -1,7 +1,9 @@
 const fa_sun = document.querySelector('.fa-sun')
 const fa_moon = document.querySelector('.fa-moon')
 const root = document.querySelector('#root')
-console.log(root)
+const closeVideo = document.querySelector('#close_video')
+const video_current = document.getElementsByTagName('iframe')
+console.log(video_current[0])
 
 fa_sun.onclick = function () {
     root.classList.add('light')
@@ -23,3 +25,8 @@ $('.counter').countUp({
     'time': 4000,
     'delay': 10
 });
+
+closeVideo.onclick = function () {
+    // video_current.pause()
+    console.log(234235)
+}
