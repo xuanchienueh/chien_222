@@ -235,6 +235,28 @@ $res_PC: "only screen and (min-width: 992px)";
             }
         }
     }
+    #deliciousness {
+        background-color: #fff;
+        .count_number {
+            .count_item {
+                .wrap {
+                    background-color: #fff;
+                    &:hover {
+                        box-shadow: 0 5px 4px 1px rgba(0, 0, 0, 0.15);
+                    }
+                }
+                span,
+                p {
+                    color: $bg-dark1;
+                }
+            }
+        }
+        #video_Modal {
+            .modal-content {
+                border: none;
+            }
+        }
+    }
 }
 #banner {
     width: 100%;
