@@ -145,6 +145,17 @@ p.chukieu {
       color: #232121; }
       #root.light #list_food .boder .title .name h6:hover {
         color: #ff6600; }
+#root.light #deliciousness {
+  background-color: #fff; }
+  #root.light #deliciousness .count_number .count_item .wrap {
+    background-color: #fff; }
+    #root.light #deliciousness .count_number .count_item .wrap:hover {
+      box-shadow: 0 5px 4px 1px rgba(0, 0, 0, 0.15); }
+  #root.light #deliciousness .count_number .count_item span,
+  #root.light #deliciousness .count_number .count_item p {
+    color: #232220; }
+  #root.light #deliciousness #video_Modal .modal-content {
+    border: none; }
 
 #banner {
   width: 100%;
