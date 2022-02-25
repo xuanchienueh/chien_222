@@ -478,10 +478,18 @@ $res_PC: "only screen and (min-width: 992px)";
         }
     }
 }
-
+@keyframes animation_play {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.25), 0 0 0 10px rgba(255, 255, 255, 0.25),
+            0 0 0 20px rgba(255, 255, 255, 0.25);
+    }
+    100% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.25), 0 0 0 20px rgba(255, 255, 255, 0.25),
+            0 0 0 40px rgba(50, 100, 245, 0);
+    }
+}
 #deliciousness {
     background-color: $bg-dark1;
-    height: 2000px;
     .background {
         background-image: url("../img/banner2.jpg");
         background-position: center;
@@ -508,6 +516,8 @@ $res_PC: "only screen and (min-width: 992px)";
                 color: $text-white1;
                 font-weight: $fw-1;
                 width: 90%;
+                margin-left: 50%;
+                transform: translateX(-50%);
             }
             .deliciousness_button {
                 margin-top: 5%;
@@ -553,8 +563,6 @@ $res_PC: "only screen and (min-width: 992px)";
                     transition: all 0.5s;
                     &:hover {
                         transform: translateY(-0.25rem);
-                        // box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
-                        // box-shadow: 0 8px 6px -6px white;
                         box-shadow: rgba(46, 41, 51, 8%) 0px 2px 4px, rgba(71, 63, 79, 16%) 0px 5px 0px;
                     }
                     .icon {
@@ -588,7 +596,7 @@ $res_PC: "only screen and (min-width: 992px)";
     }
     .background_video {
         width: 100%;
-        margin-top: 12%;
+        margin-top: 15%;
         .video {
             margin: 0 auto;
             width: 100%;
@@ -609,16 +617,50 @@ $res_PC: "only screen and (min-width: 992px)";
             a {
                 position: absolute;
                 z-index: 1;
-                left: 30%;
-                top: 30%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background-color: $text-white1;
+                width: 72px;
+                height: 72px;
+                border-radius: 50%;
+                text-align: center;
+                transition: all 0.5s;
+                &:hover {
+                    width: 90px;
+                    height: 90px;
+                    background-color: $primary-color;
+                    i {
+                        color: white;
+                        font-size: 2rem;
+                    }
+                }
+                animation-name: animation_play;
+                animation-duration: 2s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                i {
+                    margin-top: 50%;
+                    transform: translateY(-50%);
+                    color: $primary-color;
+                    transition: all 0.5s;
+                    font-size: 1.5rem;
+                }
             }
         }
         #video_Modal {
             background-color: rgba(0, 0, 0, 0.8);
             .modal-dialog {
+                width: 100%;
+                max-width: 100%;
                 .modal-content {
                     background-color: transparent;
-                    margin: 0 auto;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 50vh;
+                    margin-bottom: auto;
+                    width: 800px;
+                    transform: translateY(-50%);
                     .modal-header {
                         border: none;
                         button {
@@ -731,6 +773,81 @@ $res_PC: "only screen and (min-width: 992px)";
             }
         }
     }
+    #deliciousness {
+        height: 1230px;
+        .background {
+            height: 320px;
+            .deliciousness_content {
+                min-width: 375px;
+                h3 {
+                    font-size: 1.5rem;
+                }
+                .deliciousness_button {
+                    button {
+                        padding: 0.5rem;
+                        margin: 0 0.5rem;
+                        span,
+                        i {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+            .count_number {
+                left: 0;
+                right: 0;
+                top: 100%;
+                .count_item {
+                    .wrap {
+                        box-shadow: none;
+                        padding: 20px 0 0;
+                        .icon {
+                            width: 68px;
+                            height: 68px;
+                            font-size: 1.5rem;
+                        }
+                        span {
+                            font-size: 2rem;
+                        }
+                        p {
+                            font-size: 1rem;
+                            margin-top: 0;
+                            color: $text-white2;
+                        }
+                    }
+                }
+            }
+        }
+        .background_video {
+            height: 500px;
+            margin-top: 120%;
+            .video {
+                height: 400px;
+            }
+            #video_Modal {
+                .modal-dialog {
+                    margin: 0;
+                    .modal-content {
+                        width: 100%;
+                        .modal-header {
+                            button {
+                                top: -12px;
+                                left: 305px;
+                            }
+                        }
+                    }
+                    .modal-body {
+                        padding: 0;
+                        max-width: 100%;
+                        iframe {
+                            width: 390px;
+                            height: 195px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @include responsive_tablet {
     #banner {
@@ -764,6 +881,74 @@ $res_PC: "only screen and (min-width: 992px)";
         }
         .restaurant_content {
             margin-left: 2%;
+        }
+    }
+    #deliciousness {
+        .background {
+            height: 360px;
+            .deliciousness_content {
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 85%;
+                h3 {
+                    font-size: 2.5rem;
+                    text-align: center;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                }
+                .deliciousness_button {
+                    button {
+                        padding: 0.8rem 2rem;
+                        span,
+                        i {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+            .count_number {
+                position: absolute;
+                top: 112%;
+                left: 0%;
+                right: 0%;
+                .count_item {
+                    .wrap {
+                        padding: 12px 0;
+                        p {
+                            color: $text-white2;
+                            font-size: 1.3rem;
+                            margin-top: 0;
+                        }
+                        span {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+        .background_video {
+            height: 100%;
+            .video {
+                height: 400px;
+                margin-top: 44%;
+            }
+            #video_Modal {
+                .modal-dialog {
+                    width: 100%;
+                    height: 100%;
+                    .modal-content {
+                        .modal-header {
+                            button {
+                                right: 50px;
+                            }
+                        }
+                        iframe {
+                            width: 100%;
+                            height: 475px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -841,6 +1026,9 @@ $res_PC: "only screen and (min-width: 992px)";
     #deliciousness {
         .background {
             height: 490px;
+            .deliciousness_content {
+                width: 70%;
+            }
         }
         .background_video {
             iframe,
@@ -854,9 +1042,9 @@ $res_PC: "only screen and (min-width: 992px)";
             #video_Modal {
                 .modal-dialog {
                     max-width: 100%;
-                    margin-top: 12%;
+                    // margin-top: 12%;
                     .modal-content {
-                        width: 43%;
+                        // width: 43%;
 
                         .modal-header {
                             border: none;
