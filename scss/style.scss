@@ -71,7 +71,6 @@ $res_PC: "only screen and (min-width: 992px)";
     }
 }
 // end cài đặt responsive
-
 #header-diner {
     position: absolute;
     top: 16px;
@@ -273,9 +272,9 @@ $res_PC: "only screen and (min-width: 992px)";
         }
         p {
             color: $text-white1;
-            font-size: 1.3rem;
+            font-size: 1rem;
             line-height: 1.8;
-            margin-top: 2rem;
+            margin-top: 0.5rem;
         }
         button {
             // padding: 1rem 3rem;
@@ -992,21 +991,21 @@ $res_PC: "only screen and (min-width: 992px)";
         height: 100vh;
         background-position: center;
         .banner_content {
-            top: 220px;
+            top: 200px;
             left: 100px;
             h3 {
                 font-size: 3.5rem;
             }
             button {
-                padding: 1rem 3rem;
-                border: 3px solid $text-white1;
+                padding: 0.8rem 2.5rem;
+                border: 2px solid $text-white1;
                 &:hover span,
                 &:hover i {
                     color: $primary-color;
                 }
                 span,
                 i {
-                    font-size: 1.5rem;
+                    font-size: 1.1rem;
                     font-weight: $fw-1;
                     color: $text-white1;
                 }
