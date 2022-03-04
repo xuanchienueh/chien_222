@@ -169,9 +169,9 @@ p.chukieu {
       font-weight: bold; }
     #banner .banner_content p {
       color: #ffffff;
-      font-size: 1.3rem;
+      font-size: 1rem;
       line-height: 1.8;
-      margin-top: 2rem; }
+      margin-top: 0.5rem; }
     #banner .banner_content button:hover span, #banner .banner_content button:hover i {
       color: #ff6600; }
     #banner .banner_content button span,
@@ -672,18 +672,18 @@ p.chukieu {
     height: 100vh;
     background-position: center; }
     #banner .banner_content {
-      top: 220px;
+      top: 200px;
       left: 100px; }
       #banner .banner_content h3 {
         font-size: 3.5rem; }
       #banner .banner_content button {
-        padding: 1rem 3rem;
-        border: 3px solid #ffffff; }
+        padding: 0.8rem 2.5rem;
+        border: 2px solid #ffffff; }
         #banner .banner_content button:hover span, #banner .banner_content button:hover i {
           color: #ff6600; }
         #banner .banner_content button span,
         #banner .banner_content button i {
-          font-size: 1.5rem;
+          font-size: 1.1rem;
           font-weight: bold;
           color: #ffffff; }
 
