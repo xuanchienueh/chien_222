@@ -56,7 +56,7 @@ p.chukieu {
       border: none; }
       #header-diner .search_menu .change_theme i,
       #header-diner .search_menu .menu i {
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: white; }
     #header-diner .search_menu .change_theme .fa-moon {
       display: none; }
@@ -240,11 +240,11 @@ p.chukieu {
         color: #ffffff;
         margin-bottom: 0; }
       #restaurant .restaurant_content .introduction h3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: bold; }
       #restaurant .restaurant_content .introduction span {
         color: #ffdfc9;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         display: block;
         margin: 1.6rem 0 3.5rem; }
     #restaurant .restaurant_content .deal_food .deal_food_item:hover .icon i {
@@ -262,10 +262,11 @@ p.chukieu {
     #restaurant .restaurant_content .deal_food .deal_food_item h3 {
       font-weight: bold;
       margin: 2rem 0 1rem 0;
-      cursor: pointer; }
+      cursor: pointer;
+      font-size: 1.2rem; }
     #restaurant .restaurant_content .deal_food .deal_food_item p {
       color: #ffdfc9;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       width: 90%; }
 
 #category {
@@ -443,7 +444,7 @@ p.chukieu {
         #deliciousness .background .count_number .count_item .wrap p {
           text-align: center;
           margin-top: 1rem;
-          font-size: 1.5rem; }
+          font-size: 1rem; }
         #deliciousness .background .count_number .count_item .wrap span {
           display: block;
           font-size: 2.5rem;
@@ -719,13 +720,17 @@ p.chukieu {
 
   #about_us .about_us {
     padding: 100px 0; }
-    #about_us .about_us .about_title h3 {
-      font-size: 3rem; }
-    #about_us .about_us .about_title p {
-      font-size: 1.5rem; }
-    #about_us .about_us .about_content p,
-    #about_us .about_us .about_content span {
-      font-size: 1.5rem; }
+    #about_us .about_us .about_title {
+      padding: 0 2rem; }
+      #about_us .about_us .about_title h3 {
+        font-size: 2.4rem; }
+      #about_us .about_us .about_title p {
+        font-size: 1.5rem; }
+    #about_us .about_us .about_content {
+      padding: 0 4rem; }
+      #about_us .about_us .about_content p,
+      #about_us .about_us .about_content span {
+        font-size: 1.1rem; }
 
   #restaurant .row {
     max-width: 100%; }

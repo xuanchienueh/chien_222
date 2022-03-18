@@ -26,7 +26,6 @@ $(".counter").countUp({
 
 closeVideo.onclick = function () {
   // video_current.pause()
-  console.log(234235);
 };
 
 const closeVideo_end = document.querySelector("#end .close__btn i");
@@ -45,3 +44,7 @@ window.onscroll = function () {
     id_end.scrollIntoView(true);
   }
 };
+
+{
+  /* <script>new WOW().init();</script>; */
+}
