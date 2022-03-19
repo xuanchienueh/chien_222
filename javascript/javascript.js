@@ -36,11 +36,11 @@ closeVideo_end.onclick = function () {
 
 const chieudaibody = document.body.offsetHeight;
 window.onscroll = function () {
-  window.scrollY >= chieudaibody - window.innerHeight
+  window.scrollY >= chieudaibody - window.innerHeight -50
     ? id_end.classList.remove("p-fixed")
     : id_end.classList.add("p-fixed");
 
-  if (window.scrollY == chieudaibody - window.innerHeight) {
+  if (window.scrollY == chieudaibody - window.innerHeight -50) {
     id_end.scrollIntoView(true);
   }
 };
