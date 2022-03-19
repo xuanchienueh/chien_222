@@ -2,7 +2,7 @@ const fa_sun = document.querySelector(".fa-sun");
 const fa_moon = document.querySelector(".fa-moon");
 const root = document.querySelector("#root");
 const closeVideo = document.querySelector("#close_video");
-const video_current = document.getElementsByTagName("iframe");
+const iframe = document.querySelector("#iframe");
 
 fa_sun.onclick = function () {
   root.classList.add("light");
@@ -25,7 +25,10 @@ $(".counter").countUp({
 });
 
 closeVideo.onclick = function () {
-  // video_current.pause()
+  iframe.src = "";
+  setTimeout(() => {
+    iframe.src = "https://player.vimeo.com/video/305185528";
+  }, 500);
 };
 
 const closeVideo_end = document.querySelector("#end .close__btn i");
@@ -42,10 +45,5 @@ window.onscroll = function () {
 
   if (window.scrollY == chieudaibody - window.innerHeight) {
     id_end.scrollIntoView(true);
-    // window.scrollTo(0, document.body.scrollHeight);
   }
 };
-
-{
-  /* <script>new WOW().init();</script>; */
-}
