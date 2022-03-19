@@ -98,7 +98,7 @@ $res_PC: "only screen and (min-width: 992px)";
       background-color: transparent;
       border: none;
       i {
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: white;
       }
     }
@@ -404,12 +404,12 @@ $res_PC: "only screen and (min-width: 992px)";
         margin-bottom: 0;
       }
       h3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: $fw-1;
       }
       span {
         color: #ffdfc9;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         display: block;
         margin: 1.6rem 0 3.5rem;
       }
@@ -435,10 +435,11 @@ $res_PC: "only screen and (min-width: 992px)";
           font-weight: $fw-1;
           margin: 2rem 0 1rem 0;
           cursor: pointer;
+          font-size: 1.2rem;
         }
         p {
           color: #ffdfc9;
-          font-size: 1.3rem;
+          font-size: 1.1rem;
           width: 90%;
         }
       }
@@ -671,7 +672,7 @@ $res_PC: "only screen and (min-width: 992px)";
           p {
             text-align: center;
             margin-top: 1rem;
-            font-size: 1.5rem;
+            font-size: 1rem;
           }
           span {
             display: block;
@@ -1085,17 +1086,19 @@ $res_PC: "only screen and (min-width: 992px)";
     .about_us {
       padding: 100px 0;
       .about_title {
+        padding: 0 2rem;
         h3 {
-          font-size: 3rem;
+          font-size: 2.4rem;
         }
         p {
           font-size: 1.5rem;
         }
       }
       .about_content {
+        padding: 0 4rem;
         p,
         span {
-          font-size: 1.5rem;
+          font-size: 1.1rem;
         }
       }
     }
