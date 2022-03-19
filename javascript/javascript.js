@@ -41,7 +41,7 @@ window.onscroll = function () {
     : id_end.classList.add("p-fixed");
 
   if (window.scrollY == chieudaibody - window.innerHeight -50) {
-    id_end.scrollIntoView(true);
+         window.scrollTo(0,document.body.scrollHeight);
   }
 };
 
