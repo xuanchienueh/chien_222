@@ -14,3 +14,5 @@
 - Contact(#contact): done
 - Footer(#footer): done
 - Video end(#end): done
+
+Link: https://xuanchienueh.github.io/chien_222/
