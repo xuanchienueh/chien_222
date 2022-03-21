@@ -912,10 +912,30 @@ p.chukieu {
 #end {
   background-color: #232220;
   height: auto;
-  position: relative; }
+  position: relative;
+  width: 706px !important;
+  margin-left: 50%;
+  transform: translateX(-50%); }
   #end .end__video {
     display: block;
     position: relative; }
+    #end .end__video .my-video-dimensions {
+      width: 730px;
+      height: 412px; }
+    #end .end__video .vjs-big-play-button {
+      left: 50% !important;
+      top: 50% !important;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      width: 2em;
+      height: 2em;
+      border: none;
+      background-color: #f7f7f741; }
+      #end .end__video .vjs-big-play-button .vjs-icon-placeholder::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px; }
     #end .end__video img {
       position: absolute;
       z-index: +1;
@@ -929,18 +949,7 @@ p.chukieu {
       right: 0;
       bottom: 2%; }
   #end .close__btn {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 100%;
-    cursor: pointer;
-    background-image: linear-gradient(0deg, rgba(15, 16, 15, 0.2) 0%, rgba(255, 255, 255, 0.3) 100%); }
-    #end .close__btn i {
-      font-size: 20px;
-      color: white;
-      background-color: black;
-      border-radius: 50%;
-      float: right; }
+    display: none; }
 
 #end.p-fixed {
   position: fixed;
@@ -948,7 +957,9 @@ p.chukieu {
   bottom: 8px;
   width: 498px !important;
   z-index: 16;
-  justify-content: flex-start !important; }
+  justify-content: flex-start !important;
+  margin-left: 0;
+  transform: translateX(0); }
   #end.p-fixed .end__video video {
     width: 498px;
     height: 280px; }
@@ -969,5 +980,19 @@ p.chukieu {
       justify-content: center;
       align-items: center;
       font-size: 40px; }
+  #end.p-fixed .close__btn {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 100%;
+    cursor: pointer;
+    background-image: linear-gradient(0deg, rgba(15, 16, 15, 0.2) 0%, rgba(255, 255, 255, 0.3) 100%); }
+    #end.p-fixed .close__btn i {
+      font-size: 20px;
+      color: white;
+      background-color: black;
+      border-radius: 50%;
+      float: right; }
 
 /*# sourceMappingURL=style.css.map */

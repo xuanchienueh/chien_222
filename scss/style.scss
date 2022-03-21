@@ -1378,9 +1378,32 @@ $res_PC: "only screen and (min-width: 992px)";
   background-color: #232220;
   height: auto;
   position: relative;
+  width: 706px !important;
+  margin-left: 50%;
+  transform: translateX(-50%);
   .end__video {
     display: block;
     position: relative;
+    .my-video-dimensions {
+      width: 730px;
+      height: 412px;
+    }
+    .vjs-big-play-button {
+      left: 50% !important;
+      top: 50% !important;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      width: 2em;
+      height: 2em;
+      border: none;
+      background-color: #f7f7f741;
+      .vjs-icon-placeholder::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+      }
+    }
     img {
       position: absolute;
       z-index: +1;
@@ -1395,25 +1418,9 @@ $res_PC: "only screen and (min-width: 992px)";
       bottom: 2%;
     }
   }
-  .close__btn {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 100%;
-    cursor: pointer;
-    background-image: linear-gradient(
-      0deg,
-      rgba(#0f100f, 0.2) 0%,
-      rgba(white, 0.3) 100%
-    );
-    i {
-      font-size: 20px;
-      color: white;
-      background-color: black;
-      border-radius: 50%;
-      float: right;
-    }
-  }
+ .close__btn { 
+   display: none;
+ }
 }
 #end.p-fixed {
   position: fixed;
@@ -1422,6 +1429,8 @@ $res_PC: "only screen and (min-width: 992px)";
   width: 498px !important;
   z-index: 16;
   justify-content: flex-start !important;
+  margin-left: 0;
+  transform: translateX(-0);
   .end__video {
     video {
       width: 498px;
@@ -1446,6 +1455,26 @@ $res_PC: "only screen and (min-width: 992px)";
         align-items: center;
         font-size: 40px;
       }
+    }
+  }
+  .close__btn {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 100%;
+    cursor: pointer;
+    background-image: linear-gradient(
+      0deg,
+      rgba(#0f100f, 0.2) 0%,
+      rgba(white, 0.3) 100%
+    );
+    i {
+      font-size: 20px;
+      color: white;
+      background-color: black;
+      border-radius: 50%;
+      float: right;
     }
   }
 }
