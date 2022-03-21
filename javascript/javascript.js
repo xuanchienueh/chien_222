@@ -6,6 +6,8 @@ const iframe = document.querySelector("#iframe");
 
 fa_sun.onclick = function () {
   root.classList.add("light");
+  document.querySelector("body").style.backgroundColor = "white";
+
   const rootLight = document.querySelector("#root.light");
   if (rootLight) {
     const formInline = document.querySelector(".form-inline");
@@ -17,6 +19,8 @@ fa_moon.onclick = function () {
   root.classList.remove("light");
   fa_sun.style.display = "block";
   fa_moon.style.display = "none";
+  // console.log(document.querySelector("body"));
+  document.querySelector("body").style.backgroundColor = "black";
 };
 
 $(".counter").countUp({
