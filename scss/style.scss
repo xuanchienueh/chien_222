@@ -939,6 +939,12 @@ $res_PC: "only screen and (min-width: 992px)";
       }
     }
   }
+  #end {
+    display: none;
+  }
+  #end.p-fixed {
+    display: none;
+  }
 }
 @include responsive_tablet {
   #banner {
@@ -1041,6 +1047,12 @@ $res_PC: "only screen and (min-width: 992px)";
         }
       }
     }
+  }
+  #end {
+    display: none;
+  }
+  #end.p-fixed {
+    display: none;
   }
 }
 @include responsive_PC {
@@ -1418,9 +1430,9 @@ $res_PC: "only screen and (min-width: 992px)";
       bottom: 2%;
     }
   }
- .close__btn { 
-   display: none;
- }
+  .close__btn {
+    display: none;
+  }
 }
 #end.p-fixed {
   position: fixed;
